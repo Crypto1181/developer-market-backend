@@ -5,7 +5,14 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:3000', 'http://localhost:3005', 'http://localhost:1337'],
+      origin: [
+        'http://localhost:3000',
+        'http://localhost:3005',
+        'http://localhost:1337',
+        'https://developer-market-hub.vercel.app',
+        'https://*.vercel.app',
+        'https://*.railway.app',
+      ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       keepHeaderOnError: true,
