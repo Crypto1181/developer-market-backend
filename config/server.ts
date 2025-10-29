@@ -4,4 +4,6 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  proxy: env('NODE_ENV') === 'production',
+  url: env('PUBLIC_URL', 'https://developer-market-backend.onrender.com'),
 });
