@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ttile": {
+      "type": "string"
+    },
+    "Subtitle": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Rating": {
+      "type": "decimal"
+    },
+    "Category": {
+      "type": "string"
+    },
+    "Product_image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Rating_profile_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Comment": {
+      "type": "string"
+    },
+    "Product_comment": {
+      "type": "component",
+      "component": "shared.product-comment",
+      "repeatable": true
+    },
+    "IncluedItem": {
+      "type": "component",
+      "component": "shared.included-item",
+      "repeatable": true
+    },
+    "Stripe_Payment_Link": {
+      "type": "string"
+    },
+    "Paystack_Payment_Link": {
+      "type": "string"
+    },
+    "BTC_Wallet_Address": {
+      "type": "string"
+    },
+    "ETH_Wallet_Address": {
+      "type": "string"
+    },
+    "USDT_Wallet_Address": {
+      "type": "string"
+    }
+  }
+}

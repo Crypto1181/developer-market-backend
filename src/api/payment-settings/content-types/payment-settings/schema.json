@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payment_setting",
+  "info": {
+    "singularName": "payment-settings",
+    "pluralName": "payment-setting",
+    "displayName": "Payment Settings"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paypal_email": {
+      "type": "string"
+    },
+    "btc_wallet_address": {
+      "type": "string"
+    },
+    "eth_wallet_address": {
+      "type": "string"
+    },
+    "usdt_wallet_address_Trc20": {
+      "type": "string"
+    },
+    "paystack_Url_link": {
+      "type": "string"
+    },
+    "Stripe_paymet_link": {
+      "type": "string"
+    },
+    "stripe_enabled": {
+      "type": "boolean"
+    },
+    "paypal_enabled": {
+      "type": "boolean"
+    },
+    "Paystack_enabled": {
+      "type": "boolean"
+    },
+    "crypto_enabled": {
+      "type": "boolean"
+    },
+    "support_email": {
+      "type": "email"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_product_comments",
+  "info": {
+    "displayName": "Product_comment"
+  },
+  "options": {},
+  "attributes": {
+    "commenter_name": {
+      "type": "string"
+    },
+    "comment_text": {
+      "type": "blocks"
+    },
+    "profile_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Rating": {
+      "type": "decimal"
+    }
+  },
+  "config": {}
+}

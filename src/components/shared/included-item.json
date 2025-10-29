@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_included_items",
+  "info": {
+    "displayName": "IncludedItem"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
