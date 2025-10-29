@@ -1,0 +1,9 @@
+branch-defaults:
+  main:
+    environment: developer-market-backend-env
+global:
+  application_name: developer-market-backend
+  default_platform: Node.js 22
+  default_region: eu-north-1
+  sc: git
+  workspace_type: Application
