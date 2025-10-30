@@ -6,4 +6,11 @@ export default ({ env }) => ({
   },
   proxy: env('NODE_ENV') === 'production',
   url: env('PUBLIC_URL', 'https://developer-market-backend.onrender.com'),
+  // Optimize for low memory environments (Render free tier)
+  cron: {
+    enabled: false, // Disable cron to save memory
+  },
+  admin: {
+    watchIgnoreFiles: ['**/tmp/**', '**/node_modules/**'], // Reduce file watching
+  },
 });
